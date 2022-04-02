@@ -129,7 +129,7 @@ const sleep = async (ms) => {
 const img = ['admin', 'ban', 'cowner', 'Faketumber', 'imagen', 'imgregla', 'M18', 'multimedia', 'TikTok', 'uwu']
 const imgramdon = img[Math.floor(Math.random() * img.length)]
 //CREADOR
-const yo = `𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊`
+const yo = `𝕿𝖚𝖙𝖞`
 const Githu = 'https://github.com/thechoute'
 const Youtube = 'https://www.youtube.com/c/thechout'
 const WhatsApp = '18299897014'
@@ -367,7 +367,7 @@ isCharge: "" || false
         }
       }
     }
-    leo.sendMessage(id, {name: "𝕭𝖔𝖙-𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊 𝕺𝕱𝕮", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)}
+    leo.sendMessage(id, {name: "𝓹𝓪𝓷𝓺𝓾𝓮𝓺𝓾𝓮", address: "", jpegThumbnail: fs.readFileSync('./media/imagen/Faketumber.jpg'), }, MessageType.text, opción)}
  
   const isUrl = (url) => {return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))}
 
@@ -773,7 +773,7 @@ const chr = {
   "mimetype": "image/jpeg",
   "jpegThumbnail": fs.readFileSync(`./media/imagen/joy.jpg`)
   },
-  "title": `${yo} | 𝑩𝒂𝒃𝒚𝑩𝒆𝒄𝒉𝒐𝒔𝒐`,
+  "title": `${yo} | 𝓹𝓪𝓷𝓺𝓾𝓮𝓺𝓾𝓮\`,
   "description": "",
   "currencyCode": "L&J",
   "priceAmount1000": "9999999999999999",
@@ -1213,7 +1213,7 @@ if (choute.message.listResponseMessage){
   uptime = process.uptime()
   txtt =
 `${agra}`
-  buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Grupo de WhatsApp'},type:1},]
+  buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Panqueques'},type:1},]
   imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/TikTok.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
   buttonsMessage = {
   contentText: `${txtt}`,
@@ -1264,7 +1264,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`verdad`)){
   if (isBan) return leoply  (baby.only.benned)	
   if (!isRegister) return leoply(baby.only.usrReg)
-  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`]
+  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z},`${AA}`,`${AB}`,`${AC}`,`${AD}`,`${AE}`,`${AF}`,`${AG}`,`${AH}`,`${AI}`,`${AJ}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)  
   addFilter(from)
@@ -1275,7 +1275,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`reto`)){
   if (isBan) return leoply  (baby.only.benned)	
   if (!isRegister) return leoply(baby.only.usrReg)
-  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`]
+  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}, `${R26}`, `${R27}`, `${R28}`, `${R29}`, `${R30}`, `${R31}`, `${R32}`, `${R33}`, `${R34}`, `${R35}`, `${R36}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
   addFilter(from)  
@@ -1381,7 +1381,7 @@ if (!isRegister) return leoply(baby.only.usrReg)
   imageMsg = (await leo.prepareMessageMedia((imag), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
   buttonsMessage = {
   contentText: `${txtt}`,
-  footerText: '*Aviso:* No pulses por pulsar\n© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+  footerText: '*Aviso:* No pulses por pulsar\n', imageMessage: imageMsg,
   buttons: buttons1,
   headerType: 4}
   prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,ownerNumber]} })
@@ -1416,7 +1416,7 @@ if (!botAdmin & isAntiLink & isGroup)
 
 leo.updatePresence(from, Presence.composing)
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-reply(`Los links no son permitidos rata @${sender.split("@")[0]}`)
+reply(`Los links no son permitidos rata!! @${sender.split("@")[0]}`)
 setTimeout( () => {
 leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 }, 1000)
@@ -1804,14 +1804,14 @@ try {
     veri = sender                                                
 addRegisteredUser(sender, pushname, nombre, edad, time, serialUser)
 txtt = `┌────「 *REGISTRADO* 」─
-[💈] *USER*: @${sender.split("@")[0]}
-[💈] *NOMBRE* _${nombre}_
-[💈] *EDAD* _${edad}_
-[💈] *HORA* _${time}_
-[💈] *DNI* _${DNI}_
-[💈] *SERIAL* _${serialUser}_
-└────「 *𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊* 」
-Verificación completa usa *${prefix}menu* para ver el Menu`
+[🍓] *USER*: @${sender.split("@")[0]}
+[🍓] *NOMBRE* _${nombre}_
+[🍓] *EDAD* _${edad}_
+[🍓] *HORA* _${time}_
+[🍓] *DNI* _${DNI}_
+[🍓] *SERIAL* _${serialUser}_
+└────「 *𝕿𝖚𝖙𝖞* 」
+Verificación completa.`
     let tampa = await getBuffer(ppimg)
     //leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
     buttons1 = [ {buttonId:`mlq`,buttonText:{displayText: 'Lista de Menus'},type:1},
@@ -2242,23 +2242,23 @@ case 'desilenciar':
 case 'vor':
             if (!isRegister) return leoply(baby.only.usrReg)
             if (isBan) return leoply  (baby.only.benned)	
-            txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n𝗩𝗘𝗥𝗗𝗔𝗗: .v r\n𝗥𝗘𝗧𝗢: .r v`
+            txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n Enviar pruebas en caso de ser reto(salvo se especifique que no es necesario)`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
                         {buttonId:`reto`,buttonText:{displayText: 'Reto'},type:1}]
             imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
             buttonsMessage = {
             contentText: `${txtt}`,
-            footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+            footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
             buttons: buttons1,
             headerType: 4} 
             prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute })
             leo.relayWAMessage(prep)              
             break
 
-case 'chiste':
+case 'divagar':
             if (isBan) return leoply  (baby.only.benned)	
             if (!isRegister) return leoply(baby.only.usrReg)
-            respuesta = [`¿Cuál es el colmo de un ciego?\n Enamorarse a primera vista.`, `*¿Qué le dijo un zapato a otro?* \n - Qué vida más arrastrada llevas. \n ¡MIRA LOS ZAPATOS QUE EXISTEN PARA ANDAR POR EL TECHO!`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `*¿Qué le dijo batman al papel higiénico?* \n Tu eres el único que conoce mi baticueva.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `¿Qué le dice una iguana a su hermana gemela? \n Somos iguanitas`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `¿Cuál es el pez que huele mucho? \n ¡Peztoso!`, `¿Sabes cómo se queda un mago después de comer? \n Magordito` ]
+            respuesta = [`Mi cuerpo se despierta a las 6.00 am, mi cerebro a las 9.00 am y mi buen humor a las 12.00 pm `, `¡No soy bipolar! Me hacen enfadar cuando estoy feliz`, `Personas como tú caen muy bien, por las escaleras, por ejemplo`, `Me acabo de dar cuenta que el OK es un muñequito acostado`, `Acepta la responsabilidad de tu vida. Date cuenta que tú eres quien va a llegar a dónde quiere ir. Nadie más`, `La vida no es un problema para ser resuelto, es un misterio para ser vivido.`, `Me gustan mis errores. No quiero renunciar a la deliciosa libertad de equivocarme.`, `La edad es algo que no importa, a menos que seas un queso.`, `La pereza no es más que el hábito de descansar antes de que te canses.`, `¿Quieres casarte conmigo?, ¡soy un hombre!. Bueno, nadie es perfecto`, `La vida es corta. Sonríe mientras todavía tengas dientes.`, `No soy vago, estoy en modo ahorro de energía.`,`¿Por qué no tiran bombas en África?.. Porque no encuentran el blanco.`, `-¿Doctor cómo va la operación? \n +Operación?!!! No era una autopsia..?`, `¿Por qué el planeta Tierra se llama así si el 75% de su territorio es de agua?`, ` Si contamos ovejas para dormir, ¿qué cuentan las ovejas?`, `Lo más hermoso que le puedes regalar a alguien es tu tiempo, porque es una cosa que das ... Y ya no vuelve nunca (:`, `¿Por qué hay psicólogos tristes?`, `¿Cuánto tiempo hay que esperar para ver un eclipse solar?`, `Si me conecto al WiFi de una Iglesia, ¿recibo la señal de Dios?`, `¿Dónde se inventan los chistes?`, `¿Si llueve delante de mí, por qué corro bajo la lluvia?`, `Si mojo una almendra, ¿sigue siendo un fruto seco?`]
             answer = respuesta[Math.floor(Math.random() * respuesta.length)]
             reply(answer)
             addFilter(from)
@@ -2268,7 +2268,7 @@ case 'top5':
               if (!isRegister) return leoply(baby.only.usrReg)
               if (isBan) return leoply  (baby.only.benned)	
               addFilter(from)
-          if (!isGroup) return reply('Top5 en un chat? Te gusta la pija cierto. Este comando es solo para grupos.')
+          if (!isGroup) return reply('Este comando es solo para grupos.')
           member = []
           top5 = args.join(' ')
           const p1 = groupMembers
@@ -2313,7 +2313,7 @@ break
 case 'pregunta':
                   if (!isRegister) return leoply(baby.only.usrReg)
                   if (isBan) return leoply  (baby.only.benned)	
-                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Ai una probabilidad del 99.99999999991.01%', 'Puede que no', 'Yo que se', 'mmmm🤔.... Dejame lo pienso un poco']
+                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Hay una probabilidad del 99.99999999991.01%', 'Puede que no', 'No sé :v', 'mmm.... Dejame lo pienso un poco', 'Yo no te lo quería decir pero... si', 'Eso es un se-cre-to', 'Ajam.. claaaro..', 'La respuesta está en tu corazón', 'No, no y no', 'Mañana sin falta te respondo', 'Yes! Yes! Yes!', 'Ya sabes la respuesta.', 'Mi bola de cristal dijo... SIIII', 'SImón', 'NOruega', 'De día si y de noche no']
                   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
                   if (!q) return reply('Y la pregunta?')
                   reply(answer)
@@ -3904,7 +3904,7 @@ case 'xd':
             teks += `╠ @${mem.jid.split('@')[0]}\n`
             members_id.push(mem.jid)
             }
-            mentions('*𝐌𝐈𝐄𝐌𝐁𝐑𝐎𝐒  𝐃𝐄𝐋  𝐆𝐑𝐔𝐏𝐎*\n╔════ 𝕭𝖆𝖇𝖞𝕭𝖊𝖈𝖍𝖔𝖘𝖔\n╠ ● '+teks+'╠═══════ *𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊* ═════\n╚══════', members_id, true)
+            mentions('*𝐌𝐈𝐄𝐌𝐁𝐑𝐎𝐒  𝐃𝐄𝐋  𝐆𝐑𝐔𝐏𝐎*\n╔════\n𝓹𝓪𝓷𝓺𝓾𝓮𝓺𝓾𝓮╠ ● '+teks+'╠═══════ *𝕿𝖚𝖙𝖞* ═════\n╚══════', members_id, true)
             addFilter(from)
             break
 
