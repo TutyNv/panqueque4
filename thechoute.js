@@ -960,7 +960,7 @@ Los errores de play y logos ya estan solucionado`
 
 if (choute.message.buttonsResponseMessage){
   test = choute.message.buttonsResponseMessage.selectedButtonId
-  if (test.includes(`sex`)){
+  if (test.includes(`+18`)){
     reply('*Cargando Proceso de Instalacion*\nPorfavor esperar.')
     leo.sendMessage(from, `${install}`, MessageType.text, {quoted: choute, caption: `El video sera subido pronto en el canal de `, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply": 
     {"title": `Hola ${pushname} 👋🏻`, 
@@ -973,7 +973,7 @@ if (choute.message.buttonsResponseMessage){
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`grupo`)){
-  leo.sendMessage(from, `Ya querías..`, MessageType.text, {quoted: choute})
+  leo.sendMessage(from, `🥞`, MessageType.text, {quoted: choute})
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
@@ -1110,7 +1110,7 @@ if (choute.message.listResponseMessage){
   reply('Cargando menu... No hagas spam, panqueque puede apagarse')            
   txtt =
   `${texto}\n${allmenu}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Botón'},type:1},]
+    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Botón para recibir panqueques'},type:1},]
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
