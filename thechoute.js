@@ -74,8 +74,8 @@ const { reglas, logos } = require ('./lib/reglas')
 const {janza, janz, menuall, qmiembros, brillo, choute, cnal} = require ('./lib/baby.js')
 //const {bechoso} = require ('./lib/exportaciones/bechoso')
 const { vor } = require ('./lib/baby/vor')
-const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z } = require ('./lib/baby/verdad')
-const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
+const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, } = require ('./lib/baby/verdad')
+const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27,R28, R29, R30, R31, R32, R33, R34, R35, R36, } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 //const { linkgp } = require ('./lib/exportaciones/linkgp')
 const {grupos, admin, m18, multimedia, owener,extra, entrete, menual, menusticker} = require ('./lib/menus/menu');
@@ -118,7 +118,7 @@ const Exif = require('./lib/exif')
 const exif = new Exif()*/
 blocked = []
 
-const prefix = '.'
+const prefix = '!'
 
 //var prefix = JSON.parse(fs.readFileSync('./src/prefix.json'));
 
@@ -183,11 +183,11 @@ const getRegisteredRandomId = () => {
     ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
     
      teks = 
-  `😙Hola, @${num.split('@')[0]}
+ `Hola, @${num.split('@')[0]}
   Bienvenido a ${mdata.subject}
     
-  Esperemos la pases bien y te guste el grupo.
-  Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
+  Presentate con nombre, edad, pais y foto (obligatorio). Lee la descripción y sigue las reglas.
+Esperemos la pases bien y te guste el grupo.`
   
     let fotoP = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -199,9 +199,9 @@ const getRegisteredRandomId = () => {
   try {
   ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
   catch {
-  ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
+  ppimg = 'https://i.pinimg.com/originals/9f/70/ff/9f70ffc168471630da4f6c3cd329249e.jpg'}  
     teks = `
-    @${num.split('@')[0]} Adios no se te extrañara, no comas nada del suelo que estan envenenando a los perros.`
+    @${num.split('@')[0]} Adiós no se te extrañará, no comas nada del suelo que estan envenenando a los perros :)`
     let fotoP = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, fotoP, MessageType.image,{caption: teks, contextInfo: {"mentionedJid": [num]}})
   
@@ -232,7 +232,7 @@ const getRegisteredRandomId = () => {
   👤 *Nombre:* @${num.split('@')[0]}
   📋 *INFO:* ${thu.status}
   🌎 *Grupo:* ${mdata.subject} 
-  *F chota ya no eres administrador.*`
+  *F ya no eres administrador.*`
     let buff = await getBuffer(ppimg)
   leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
   
@@ -250,8 +250,8 @@ key : {
                     },
    message: {
                 liveLocationMessage: {
-                caption: `🔥🔥𝕿𝖍ٌ𝖊  𝕮𝖍𝖔𝖚𝖙𝖊🔥🔥`,
-                jpegThumbnail: fs.readFileSync('./media/imagen/youtube-mi.jpg'),
+                caption: `Panqueque`,
+                jpegThumbnail: fs.readFileSync('./media/imagen/fake.jpg'),
                       }
                     }
                   }
@@ -796,45 +796,47 @@ const texto11 = `
 ╰━─━─☾︎🌊☽︎─━─━╯`
 const cmenu = `
 ╔╦══• •✠•❀•✠ • •══╦╗
-    🇯🇵💮 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊 💮🇯🇵 
+        🐞 𝕿𝖚𝖙𝖞  🐞
 ╚╩══• •✠•❀•✠ • •══╩╝
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 Buenas tardes🌇 _@${sender.split('@')[0]}_
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
-||- *_-DATOS DEL USUARIO-_*
-[💈] Usuario: _@${sender.split('@')[0]}_
-[💈] XP: _${getLevelingXp(sender)}_
-[💈] Nivel: _${getLevel1}_
-||- *_-INFO DEL GRUPO-_*
-[💈] Nombre: _${groupMetadata.subject}_
-[💈] Administradores: _${groupAdmins.length}_
-[💈] Miembros: _${groupMembers.length - groupAdmins.length }_
-[💈] Total de Participantes: _${groupMembers.length}_
-||- *_-INFO DEL BOT-_*
-[💈] Creador: @${ownerNumber.split('@')[0]}
-[💈] Prefijo: "${prefix}"
-[💈] Estado del Bot: ${estadop}
-[💈] Hora: ${jm}
-[💈] Velocidad: ${process.uptime()} 
-[💈] Usuarios Registrados: ${_registered.length}
-[💈] Usuarios Baneados: ${ban.length}
-[💈] Chat Totales: ${totalchat.length}
-[💈] Hora: ${hora}
-[💈] Fecha: ${week1}  ${calender1}
-[💈] Dispositivo: _${leo.user.phone.device_manufacturer}_
-[💈] Servidor: ${leo.browserDescription[0]}
-[💈] Version de WhatsApp: ${leo.browserDescription[2]}
-[💈] Navedador: ${leo.browserDescription[1]}
-||- *_-LISTA DE MENUS-_*
-[💈] ${prefix}menugrupo
-[💈] ${prefix}menuadmin
-[💈] ${prefix}menumedia
-[💈] ${prefix}menulogo
-[💈] ${prefix}entretenimiento
-[💈] ${prefix}creador
-[💈] ${prefix}credito
-[💈] ${prefix}menuowner
-[💈] ${prefix}labiblia
+- *_-DATOS DEL USUARIO-_*
+[🍓] Usuario: _@${sender.split('@')[0]}_
+[🍓] XP: _${getLevelingXp(sender)}_
+[🍓] Nivel: _${getLevel1}_
+
+- *_-INFO DEL GRUPO-_*
+[🍓] Nombre: _${groupMetadata.subject}_
+[🍓] Administradores: _${groupAdmins.length}_
+[🍓] Miembros: _${groupMembers.length - groupAdmins.length }_
+[🍓] Total de Participantes: _${groupMembers.length}_
+
+- *_-INFO DE PANQUEQUE-_*
+[🍓] Prefijo: "${prefix}"
+[🍓] Estado del Bot: ${estadop}
+[🍓] Hora: ${jm}
+[🍓] Velocidad: ${process.uptime()} 
+[🍓] Usuarios Registrados: ${_registered.length}
+[🍓] Usuarios Baneados: ${ban.length}
+[🍓] Chat Totales: ${totalchat.length}
+[🍓] Hora: ${hora}
+[🍓] Fecha: ${week1}  ${calender1}
+[🍓] Dispositivo: _${leo.user.phone.device_manufacturer}_
+[🍓] Servidor: ${leo.browserDescription[0]}
+[🍓] Version de WhatsApp: ${leo.browserDescription[2]}
+[🍓] Navedador: ${leo.browserDescription[1]}
+
+- *_-LISTA DE MENUS-_*
+[🍓] ${prefix}menugrupo
+[🍓] ${prefix}menuadmin
+[🍓] ${prefix}menumedia
+[🍓] ${prefix}menulogo
+[🍓] ${prefix}entretenimiento
+[🍓] ${prefix}creador
+[🍓] ${prefix}credito
+[🍓] ${prefix}menuowner
+[🍓] ${prefix}labiblia
 `
 
 const nivel = `
@@ -843,29 +845,22 @@ const nivel = `
 🎖️ *Nivel* : ${nivelActual} ⏭️ ${getLevelingLevel(sender)}
 ✨ XP: ${getLevelingXp(sender)} / ${getLevelingXp(sender)}` 
 const texto = `⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊}
-      ༻▫️ 𝒯𝒽𝑒 𝒞𝒽𝑜𝓊𝓉𝑒 ▫️༺
+      ༻▫️ 𝕿𝖚𝖙𝖞 ▫️༺
 ⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊
 • • • • • • • • •「◆」• • • • • • • • •
-_Si el bot presenta algun fallo, notificarlo a @${ownerNumber.split('@')[0]}_
 • • • • • • • • • • • • • • • • • • • • •`
 
-const base = `INFO DE MI CREADOR
-*Youtube:*
-https://www.youtube.com/channel/UC-HPutaDGeTPjrCId0bXQgg?sub_confirmation=1
-*Instagram:*
-https://www.instagram.com/the_choute_/
-*Github:*
-https://github.com/Thechoute`
+const base = `eh`
 
-const infobot =`||- *_-DATOS DEL BOT-_*
-[📱] Creador: @${ownerNumber.split('@')[0]}
+const infobot =`- *_-DATOS DE PANQUEQUE-_*
 [📱] Prefijo: "${prefix}"
 [📱] Estado del Bot: ${estadop}
 [📱] Usuarios Registrados: ${_registered.length}
 [📱] Usuarios Baneados: ${ban.length}
 [📱] Dispositivo: ${device_manufacturer}
-[📱] Velocidad ${process.uptime()} 
-||- *_-DATOS DEL DISPOSITIVO-_*
+[📱] Velocidad ${process.uptime()}
+
+- *_-DATOS DEL DISPOSITIVO-_*
 [📱] Hora: ${hora}
 [📱] Fecha: ${week1}  ${calender1}
 [📱] Chat Privado: ${giid.length}
@@ -880,23 +875,17 @@ const infobot =`||- *_-DATOS DEL BOT-_*
 [📱] Navegador: ${leo.browserDescription[1]}
 [📱] Version de WhatsApp: ${leo.browserDescription[2]}
 `
-const infocreador = `${timeFt} @${sender.split('@')[0]}
-_Acontinuacion te muestro, mi creador, de preferencia solo hablare si necesitas algo :D_
-☎️ *Número* : @${ownerNumber.split("@")[0]}
-🌐 *Instagram* : ${instagram}
-🌐 *Github:* ${Githu}
-🌐 *Youtube:* youtube.com/c/thechout`
+const infocreador = `xd`
 
 const registro = `
 *PORFAVOR ESCRIBE BIEN EL FORMATO DE REGISTRO:* 
 ${prefix}reg *Nombre|Edad* 
-Con el *|* que los divide.
+Con el *|* que los divide xD
 `
 const menue = `▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 *- ${timeFt} @${sender.split("@")[0]}.* 
-Si tienes dudas o necesitas alguna ayuda siempre le puedes hablar a mi creador @${ownerNumber.split("@")[0]}.
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
-De preferencia solo hablare si realmente necesitas algo.
+De preferencia solo hablaré si realmente necesitas algo.
 ♻️ *DATOS DEL GRUPO*
 [💈] Nombre: _${groupMetadata.subject}_
 [💈] Administradores: _${groupAdmins.length}_
@@ -908,29 +897,30 @@ const allmenu =
 `
 ╔─━━━░★░━━━━╗
         *MENU OFICIAL*
-        𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊
+            𝕿𝖚𝖙𝖞        
 ╚─━━━░★░━━━─╝
 ¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
 ${timeFt} @${sender.split('@')[0]}
 Hoy es ${week1} ${calender1}
 .•♫•♬•♬•♫•.¤ = ~ ~ ◉ ~~ = ¤
-||- *_-INFO DEL BOT-_*
-[🔰] Creador: @${ownerNumber.split('@')[0]}
-[🔰] Prefijo: "${prefix}"
-[🔰] Velocidad: ${process.uptime()} 
-[🔰] Servidor: ${leo.browserDescription[0]}
-[🔰] Navegador: ${leo.browserDescription[1]}
-[🔰] Chat Privado: ${giid.length}
-[🔰] Chat de Grupos:  ${totalchat.length - giid.length}
-[🔰] Chat Totales: :${totalchat.length}
+
+||- *_-INFO DE PANQUEQUE-_*
+[🥞] Prefijo: "${prefix}"
+[🥞] Velocidad: ${process.uptime()} 
+[🥞] Servidor: ${leo.browserDescription[0]}
+[🥞] Navegador: ${leo.browserDescription[1]}
+[🥞] Chat Privado: ${giid.length}
+[🥞] Chat de Grupos:  ${totalchat.length - giid.length}
+[🥞] Chat Totales: :${totalchat.length}
+
 ||- *_-INFO DEL DISPOSITIVO-_*
-[🔰] Dispositivo: ${device_manufacturer}s
-[🔰] Modelo: ${device_model}
-[🔰] Android: ${os_version} 
-[🔰] Ram: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-[🔰] Hora: ${hora}
-[🔰] Fecha: ${week1}  ${calender1}
-_MENU EN REMODELACION_
+[🥞] Dispositivo: ${device_manufacturer}s
+[🥞] Modelo: ${device_model}
+[🥞] Android: ${os_version} 
+[🥞] Ram: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+[🥞] Hora: ${hora}
+[🥞] Fecha: ${week1}  ${calender1}
+_PANQUEQUE EN REMODELACIÓN, NO CURIOSEAR COMANDOS NSFW_
 ${menual}`
 
 const nuevo = `
@@ -941,11 +931,11 @@ Serbot
 Comandos +18
 AutoSticker
 *NOTA:*
-Los errores de play y logos ya estan solucionado, si el bot les presenta alguna falla notificar a @${ownerNumber.split('@')[0]}`
+Los errores de play y logos ya estan solucionado`
     ///Baby
   baby = {
     wait: '*EN PROCESO*',
-    success: '*LISTO PANA*',
+    success: '*Lesto we*',
     ferr: 'Intentalo de nuevo mas tarde',
     error: {
     stick: 'Mmmmm',
@@ -953,12 +943,12 @@ Los errores de play y logos ya estan solucionado, si el bot les presenta alguna 
     },
     only: {
         group: 'Este comando solo puede ser usado en grupos.',
-        benned: 'Eres un usario *BANEADO* no puedes usar el bot',
+        benned: 'Eres un usario *BANEADO* no puedes usar a panqueque',
         ownerG: 'Este comando solo puede ser utilizado por el creador del grupo',
-        ownerB: 'Este comandos solo puede ser utilizado desde el numero del bot',
+        ownerB: 'Este comandos solo puede ser utilizado desde el numero de panqueque',
         admin: 'Este comando es solo para administradores del grupo',
-        Badmin: 'Botcito debe ser admin para poder usar este comando',
-        usrReg: `No estas registrado para registrarte utiliza\n${prefix}reg\n\n*Ejemplo:*\n\n${prefix}reg Thechoute|14`
+        Badmin: 'Panqueque debe ser admin para poder usar este comando',
+        usrReg: `No estas registrado xd para registrarte en panqueque utiliza\n${prefix}reg\n\n*Ejemplo:*\n\n${prefix}reg TuNombre|TuEdad`
       }
     }
 
@@ -983,27 +973,14 @@ if (choute.message.buttonsResponseMessage){
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`grupo`)){
-  leo.sendMessage(from, `
-  *-Te invito a unirte al grupo de WhatsApp donde:-*
-  
-  💭:Se avisa sobre nuevas actualizaciones 
-  
-  💭:Puedes probar tu propio bot
-  
-  💭:Se ayuda a quienes tengas problemas
-  
-  Grupo 1 : 
-  _https://chat.whatsapp.com/H6n4BdMISuyC12zUEVL08n_
-  
-  Grupo 2 : 
-  _https://chat.whatsapp.com/GQnptaCf21IEvLJ69RPT4a_`, MessageType.text, {quoted: choute})
+  leo.sendMessage(from, `Ya querías..`, MessageType.text, {quoted: choute})
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
 if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`nuevo`)){
-  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nCreador is 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊`, "footerText": "*𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
+  fansh = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 0, "totalAmount1000" : '1000', "message": `${nuevo}\n\n\nEdit Code 𝕿𝖚𝖙𝖞`, "footerText": "*𝕿𝖚𝖙𝖞*", "thumbnail": fs.readFileSync('./media/imagen/Faketumber.jpg'), "surface": 'CATALOG', "orderTitle": 'Sexo'}}, {contextInfo: { mentionedJid: [sender, ownerNumber]}, quoted:choute, })
   leo.relayWAMessage(fansh)
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
@@ -1026,10 +1003,6 @@ if (test.includes(`nuevo`)){
         "rowId": `miperfi`
         },
         {
-        "title": 'Recomendaciones',
-        "rowId": `recomendaciones`
-        },
-        {
         "title": 'Menu Completo',
         "rowId": `allmenu`
         },
@@ -1039,19 +1012,7 @@ if (test.includes(`nuevo`)){
         "rows": [
         {
         "title": 'Menu de sticker',
-        "rowId": `sticke`
-        },
-        {
-        "title": 'Menu de Grupos',
-        "rowId": `grupos`
-        },
-        {
-        "title": 'Administradores',
-        "rowId": `admin`
-        },
-        {
-        "title": 'Owner / Dueño Del Bot',
-        "rowId": `menuowner`
+        "rowId": `sticker`
         },
         {
         "title": 'Descargas/Multimedia',
@@ -1070,32 +1031,9 @@ if (test.includes(`nuevo`)){
         "rowId": `m18`
         },   
         ]
-        },        
-        {
-        "title": `🔖 Créditos / Creador 🔮 `,
-        "rows": [
-        {
-        "title": ' 🔮 Creador',
-        "rowId": `creador`
-        },
-        {
-        "title": 'Donacion / Agradecimiento',
-        "rowId": `agradecimiento`
-        },
-        ]    
-        },
-        {
-        "title": `Youtube`,
-        "rows": [
-        {
-        "title": 'Como Instalar Este Bot',
-        "rowId": `install`
-        },
-        ]    
-        }
+	}
         ],
-        }
-        },
+	}
           {quoted: janza, contextInfo: { mentionedJid: [sender,ownerNumber]}})
         leo.relayWAMessage(lista, {waitForAck: true})  
         addFilter(from)
@@ -1127,10 +1065,10 @@ if (choute.message.listResponseMessage){
 `
 its = await getBuffer (ppimg)
     leo.sendMessage(from,  its, image, {thumbnail:fs.readFileSync('./media/imagen/Faketumber.jpg'), quoted: choute, caption: teks, contextInfo: { mentionedJid: [sender], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
-    {"title": 'Cuenta de Instagram',       
-    "body": 'Sigueme en Instagram',  
-    "thumbnail": fs.readFileSync('./media/imagen/instagram.png'),
-    "sourceUrl": 'https://www.instagram.com/the_choute_/'}}})
+    {"title": '--',       
+    "body": '--',  
+    "thumbnail": fs.readFileSync('./media/imagen/fake.png'),
+    "sourceUrl": '--'}}})
       addFilter(from)  
   addLevelingLevel(sender, 5)	}}
 
@@ -1140,7 +1078,7 @@ if (choute.message.listResponseMessage){
   if (test.includes(`recomendaciones`)){
   leo.updatePresence(from, Presence.composing)
   if (!isRegister) return leoply(baby.only.usrReg)
-tampa = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 9999999, "message": `${reglas}`, "footerText": "*𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊*", "thumbnail": fs.readFileSync('./media/imagen/imgregla.jpg'), "surface": 'CATALOG' }}, {contextInfo: { mentionedJid: [sender,ownerNumber]}, quoted:choute, })
+tampa = leo.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 9999999, "message": `${reglas}`, "footerText": "© Edit code 𝕿𝖚𝖙𝖞", "thumbnail": fs.readFileSync('./media/imagen/imgregla.jpg'), "surface": 'CATALOG' }}, {contextInfo: { mentionedJid: [sender,ownerNumber]}, quoted:choute, })
 leo.relayWAMessage(tampa)
   addFilter(from)
   addLevelingLevel(sender, 5)	}}
@@ -1169,14 +1107,14 @@ if (choute.message.listResponseMessage){
   if (test.includes(`allmenu`)){
   leo.updatePresence(from, Presence.composing)
   if (!isRegister) return leoply(baby.only.usrReg)    
-  reply('Cargando Menu Completo, No Hagas Spam')            
+  reply('Cargando menu... No hagas spam, panqueque puede apagarse')            
   txtt =
   `${texto}\n${allmenu}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Grupo de WhatsApp'},type:1},]
+    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Botón'},type:1},]
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
-    footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+    footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
     buttons: buttons1,
     headerType: 4}
     all = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute, contextInfo: { mentionedJid: [sender,ownerNumber]} })
@@ -1279,7 +1217,7 @@ if (choute.message.listResponseMessage){
   imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/TikTok.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
   buttonsMessage = {
   contentText: `${txtt}`,
-  footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+  footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
   buttons: buttons1,
   headerType: 4}
   prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute })
@@ -1460,13 +1398,13 @@ if (!isAntiLink) return
 if (isAdmin) return('🧐')
 leo.updatePresence(from, Presence.composing)
 var kic = `@${sender.split("@")[0]}@s.whatsapp.net`
-reply(`Los link no son permitidos rata ${sender.split("@")[0]}`, mentionedJid [sender])
+reply(`Los link no son permitidos rata!! ${sender.split("@")[0]}`, mentionedJid [sender])
 setTimeout( () => {
 leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 }, 1000)
 setTimeout( () => {
 leo.updatePresence(from, Presence.composing)
-reply("adios")
+reply("Chau")
 }, 0)
 }
 if (body.includes(".com")){
@@ -1489,7 +1427,7 @@ reply("adios")
 }
 
 if (!isOwner) if (isAntiPv) if (!isGroup) {
-  reply (`El bot solo puede ser usado en grupos, por lo que te bloqueale`)
+  reply (`Panqueque sólo puede ser usado en grupos, por lo que te bloquearé`)
   setTimeout( () => {
    leo.blockUser(sender, 'add')
    }, 5000)
